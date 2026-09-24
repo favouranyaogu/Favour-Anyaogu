@@ -1,0 +1,43 @@
+[
+  {
+    "slug": "why-i-built-kind-planck",
+    "title": "Why I built kind-planck",
+    "date": "Sep 2026",
+    "readTime": "3 min read",
+    "description": "Built because frontier AI coding agents are expensive and single-provider dependent. kind-planck routes between Gemini and OpenRouter to give startups a cheaper, resilient alternative without compromising on capability.",
+    "tags": [
+      "AI",
+      "Startups",
+      "kind-planck",
+      "Engineering"
+    ],
+    "content": "Frontier AI coding agents have become remarkably capable over the past year, but for early-stage founders and indie developers, they present two critical operational risks: **unsustainable token costs** and **catastrophic single-provider dependency**.\n\nWhen your development speed relies entirely on a proprietary CLI or SaaS agent tied to a single model provider, any sudden pricing shift, quota reduction, or deprecated tier threatens to derail your entire workflow overnight.\n\n### The Problem with Single-Provider Lock-In\nMost frontier coding assistants charge a steep premium for repetitive boilerplate, AST lookups, and trivial unit test generation. You are burning top-tier reasoning tokens on tasks that require modest intelligence. Furthermore, if that provider experiences latency spikes or region-wide downtime, your coding velocity hits zero.\n\n### The kind-planck Architecture\nI built **kind-planck** as a self-hosted agent engineered specifically around cost efficiency and provider resilience:\n\n1. **Dual Routing (Gemini & OpenRouter)**: It intelligently partitions tasks. Fast semantic scaffolding runs through cost-efficient Gemini models, while deeply intricate refactors fall back to OpenRouter's ecosystem of open-weights models.\n2. **Startup-First Economics**: Startups can run their entire development cycle for a fraction of the cost of subscription-locked enterprise agents.\n3. **No Downtime Vulnerability**: If one provider's endpoint throttles or goes offline, kind-planck silently cascades to backup routes without disrupting the developer's terminal flow.\n\nBuilding your own tools isn't just about customization — it's about ownership. When you own the router, you never have to ask permission to keep shipping."
+  },
+  {
+    "slug": "mapping-repair-economy-partrate",
+    "title": "Building PartRate: Mapping the informal electronics repair economy in Lagos",
+    "date": "Aug 2026",
+    "readTime": "4 min read",
+    "description": "Why Nigerian tech repair lacks a price floor, and how building 'The Kelly Blue Book of Nigeria' required understanding computer village dynamics.",
+    "tags": [
+      "PartRate",
+      "Nigeria",
+      "Products",
+      "Supabase"
+    ],
+    "content": "If you take a shattered iPhone screen or an unresponsive motherboard into Ikeja Computer Village in Lagos, you will receive five wildly divergent quotes from five adjacent stalls within twelve minutes.\n\nThe difference in pricing is rarely about the wholesale cost of the glass or soldering ribbon. It is an information asymmetry game:\n- Does the client look like they are in an urgent rush?\n- Do they know the difference between an OLED replacement and a cheaper TFT panel?\n- Is the technician sourcing from a tier-1 importer or an arbitrary runner?\n\nThis is why I started building **PartRate**. In automotive markets, resources like Kelley Blue Book create a shared baseline for negotiation. PartRate does the same for the Nigerian consumer electronics ecosystem.\n\n### The Stack: Speed and Offline Resilience\nWe built PartRate on Next.js 14 and Supabase. The primary technical constraint in Lagos is intermittent network connectivity and mobile data consciousness. Every page is statically prerendered with ISR, and query responses are aggressively compressed.\n\nA digital product in emerging markets must respect the user's bandwidth before it demands their attention."
+  },
+  {
+    "slug": "living-site-vs-brochure",
+    "title": "Living sites vs. digital brochures: the case for prose-first web design",
+    "date": "Jul 2026",
+    "readTime": "5 min read",
+    "description": "Why modern portfolios look identical, and how studying sites like floguo.com, antfu.me, and paco.me changed how I think about personal software.",
+    "tags": [
+      "Design",
+      "Web",
+      "Philosophy"
+    ],
+    "content": "Most developer portfolios look like Figma templates purchased in 2022: huge neon gradients, Bento grids filled with meaningless skill meters (what does '85% React' even mean?), and a contact form that routes to spam.\n\nThey feel like brochures left on a windshield. Nobody wants to read a brochure.\n\n### The Warmth of a Lived-In Space\nWhen you visit Florence Guo's site (floguo.com), you don't feel like you are being pitched. You feel like you walked into someone's studio where books are sitting on a pine desk and notebooks have handwritten margin notes.\n\nWhen you look at Anthony Fu's site (antfu.me), the quiet monogram mark in the corner feels like a craftsman's stamp on leather.\n\nWhen you read Paco Coursey's work (paco.me), you sense that every single millisecond of animation and phrase of microcopy was questioned and refined.\n\nThat is what a personal website should be:\n- **Prose-first**: Words with conviction, not marketing jargon.\n- **Warmth**: A dark palette that feels like espresso and dusk, not an empty spaceship.\n- **Personality**: A bookshelf that shows what you think about when you are not writing code.\n\nIf your site feels alive, people don't just admire it — they remember who built it."
+  }
+]

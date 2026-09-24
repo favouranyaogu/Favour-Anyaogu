@@ -1,0 +1,33 @@
+{
+  "intro": "Feels like meeting a person, not reading a resume.",
+  "questions": [
+    {
+      "question": "What do you do?",
+      "answer": "Build and design with intent. Full-stack developer, real estate broker, chronic idea-starter.",
+      "detail": "I specialize in taking ambiguous product concepts and bringing them into reality with clean architecture, high typographic craft, and resilient engineering."
+    },
+    {
+      "question": "Where are you from?",
+      "answer": "Nigeria. Building for everywhere."
+    },
+    {
+      "question": "What are you working on?",
+      "answer": "PartRate, Ripple, Tome — and always something new.",
+      "items": [
+        "PartRate — standardizing Nigeria's phone repair economy.",
+        "Ripple — social media sentiment and incident clustering.",
+        "Tome — Nigerian-first digital reading marketplace.",
+        "kind-planck — autonomous multi-provider AI coding agent."
+      ]
+    },
+    {
+      "question": "How do you work?",
+      "answer": "Next.js, Tailwind, Supabase, Vercel. Design first, always."
+    }
+  ],
+  "contact": [
+    { "label": "WhatsApp (+2349019788067)", "href": "https://wa.me/2349019788067" },
+    { "label": "Email (favyfavy10@gmail.com)", "href": "mailto:favyfavy10@gmail.com" },
+    { "label": "GitHub (@favouranyaogu)", "href": "https://github.com/favouranyaogu" }
+  ]
+}

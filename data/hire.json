@@ -1,0 +1,35 @@
+[
+  {
+    "tier": "Landing Page / Marketing Site",
+    "timeline": "1–2 weeks",
+    "description": "A focused site that explains what you do and turns visitors into clients.",
+    "deliverables": [
+      "Design and development",
+      "Mobile responsive",
+      "Deployed to Vercel",
+      "One revision round"
+    ]
+  },
+  {
+    "tier": "Full Web Application",
+    "timeline": "3–6 weeks",
+    "description": "A complete product build — database, interface, and the details in between — shipped and documented.",
+    "deliverables": [
+      "Full-stack build",
+      "Authentication",
+      "Database",
+      "Admin panel if needed",
+      "Deployed and documented"
+    ]
+  },
+  {
+    "tier": "Ongoing / Retainer",
+    "timeline": "Monthly",
+    "description": "A standing engineering partner for the work that never really finishes.",
+    "deliverables": [
+      "Maintenance",
+      "Feature additions",
+      "Priority response time"
+    ]
+  }
+]

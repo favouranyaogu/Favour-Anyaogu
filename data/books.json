@@ -1,0 +1,87 @@
+[
+  {
+    "id": "the-bible",
+    "title": "The Holy Bible",
+    "author": "Scripture",
+    "status": "reading",
+    "sentence": "A living anchor. Not a conventional book, but the standard for truth, humility, and purpose.",
+    "coverId": 12707846,
+    "isSpecial": true,
+    "passages": [
+      {
+        "reference": "Matthew 5:15-16",
+        "text": "Neither do men light a candle, and put it under a bushel, but on a candlestick; and it giveth light unto all that are in the house. Let your light so shine before men, that they may see your good works, and glorify your Father which is in heaven.",
+        "reflection": "This underpins how I think about craft. Good work is not hidden out of timidity, nor paraded for vanity. It is set on a stand — made carefully enough that it quietly serves whoever walks into the room."
+      }
+    ]
+  },
+  {
+    "id": "shape-up",
+    "title": "Shape Up",
+    "author": "Ryan Singer",
+    "status": "reading",
+    "sentence": "Fixed time, variable scope — the only way small teams ship without burning out.",
+    "coverId": 12600273,
+    "quote": "If you don't limit scope, the project will take forever. If you don't shape first, you don't know what you're committing to.",
+    "reflection": "The breakthrough is decoupling the appetite — how much time a problem is worth — from the solution. Most teams do the inverse: they invent an unbounded solution and suffer as deadlines slip. Fixing the boundary first forces creative subtraction.",
+    "year": "2026"
+  },
+  {
+    "id": "the-design-of-everyday-things",
+    "title": "The Design of Everyday Things",
+    "author": "Don Norman",
+    "status": "read",
+    "sentence": "If an interface needs an explanation, the design has already failed.",
+    "coverId": 10007224,
+    "isbn": "9780465050659",
+    "quote": "Good design is actually a lot harder to notice than poor design, in part because good designs fit our needs so well that the design is invisible.",
+    "reflection": "Norman taught me that human error in software is almost always designer error. Affordances and natural signifiers should guide intuition. If someone needs a tutorial modal to use your product, you haven't finished designing it.",
+    "year": "2025"
+  },
+  {
+    "id": "zero-to-one",
+    "title": "Zero to One",
+    "author": "Peter Thiel",
+    "status": "read",
+    "sentence": "Every great business is founded on an unspoken secret hidden in plain sight.",
+    "coverId": 9002334,
+    "isbn": "9780804139298",
+    "quote": "The best entrepreneurs know this: every great business is built around a secret that's hidden from the outside.",
+    "reflection": "Competition is often an obsession with beating the person next to you rather than questioning whether the contest is worth entering. Doing what someone else already knows how to do takes the world from 1 to n. Building something genuinely new takes it from 0 to 1.",
+    "year": "2024"
+  },
+  {
+    "id": "steve-jobs",
+    "title": "Steve Jobs",
+    "author": "Walter Isaacson",
+    "status": "read",
+    "sentence": "The intersection of humanities and rigorous technology gives software its soul.",
+    "coverId": 12374726,
+    "isbn": "9781451648539",
+    "quote": "Simplicity is the ultimate sophistication.",
+    "reflection": "Jobs understood that engineering without taste produces cold, interchangeable tools. The willingness to care about the back of the cabinet nobody will ever see is what separates a commodity from an enduring piece of craft.",
+    "year": "2024"
+  },
+  {
+    "id": "poor-charlie",
+    "title": "Poor Charlie's Almanack",
+    "author": "Charles T. Munger",
+    "status": "want to read",
+    "sentence": "Assembling a lattice of mental models to avoid man-with-a-hammer blind spots.",
+    "coverId": 8337563,
+    "isbn": "9781578645015",
+    "quote": "To a man with only a hammer, every problem looks pretty much like a nail.",
+    "reflection": "Developers often try to solve human, economic, or design problems with more code. Munger's mental models are a reminder to borrow from psychology, microeconomics, and physics before touching a keyboard."
+  },
+  {
+    "id": "creative-selection",
+    "title": "Creative Selection",
+    "author": "Ken Kocienda",
+    "status": "want to read",
+    "sentence": "Inside Apple's golden era of demo-driven engineering and obsessive software feel.",
+    "coverId": 10128109,
+    "isbn": "9781250194466",
+    "quote": "Demo or it didn't happen. A demo gives you something concrete to react to.",
+    "reflection": "Kocienda describes inventing the iPhone autocorrect and touchscreen keyboard. Software feel can't be reasoned out in an abstract spec; it has to be felt under real thumbs through relentless, honest prototyping."
+  }
+]

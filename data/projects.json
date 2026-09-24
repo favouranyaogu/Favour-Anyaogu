@@ -1,0 +1,127 @@
+[
+  {
+    "id": "partrate",
+    "name": "PartRate",
+    "tagline": "Nigerian phone parts and repair price index.",
+    "description": "Navigating phone repair in Nigerian electronics markets usually means dealing with aggressive price gouging, arbitrary markup, and counterfeit screens. PartRate maps real component prices and verified repair costs across Lagos, standardizing baseline pricing for consumers and honest technicians.",
+    "category": "personal",
+    "status": "live",
+    "stack": [
+      "Next.js",
+      "Tailwind CSS",
+      "Supabase"
+    ],
+    "link": "https://partrate.vercel.app",
+    "featured": true,
+    "year": "2026"
+  },
+  {
+    "id": "haven",
+    "name": "Haven",
+    "tagline": "Luxury international real estate platform.",
+    "description": "High-net-worth investors seeking international luxury property often face fragmented regional listings, low-context PDF brochures, and unvetted agents. Haven curates premier residential assets across Dubai, London, Riyadh, Abu Dhabi, Qatar, Barbados, US, Paris, and Portugal into a discreet, editorial interface.",
+    "category": "personal",
+    "status": "live",
+    "stack": [
+      "Next.js",
+      "Tailwind CSS",
+      "Notion CMS"
+    ],
+    "link": "https://haven-realestate.vercel.app",
+    "featured": true,
+    "year": "2026"
+  },
+  {
+    "id": "ripple",
+    "name": "Ripple",
+    "tagline": "Social media monitoring and sentiment clustering.",
+    "description": "Brands, startups, and public figures frequently discover brewing PR crises and consumer friction hours after sentiment has already metastasized on social platforms. Ripple clusters emergent conversations and tracks velocity across Twitter/X, Reddit, and Bluesky before issues explode.",
+    "category": "personal",
+    "status": "building",
+    "stack": [
+      "Next.js",
+      "Tailwind CSS",
+      "Neon",
+      "Gemini",
+      "Tavily"
+    ],
+    "featured": true,
+    "year": "2026"
+  },
+  {
+    "id": "tome",
+    "name": "Tome",
+    "tagline": "Nigerian-first legal reading marketplace.",
+    "description": "Readers in Nigeria struggle with foreign-card payment declines on global digital bookstores, while local authors battle rampant piracy with no direct monetization channels. Tome establishes a localized reading marketplace for public domain classics, indie author works, and verified secondhand physical book trades.",
+    "category": "personal",
+    "status": "building",
+    "stack": [
+      "Vite",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Neon"
+    ],
+    "featured": true,
+    "year": "2026"
+  },
+  {
+    "id": "kind-planck",
+    "name": "kind-planck",
+    "tagline": "Cheaper, provider-agnostic alternative to frontier AI agents.",
+    "description": "Self-hosted AI coding agent with a resilient model router. Built to provide cheaper alternatives to frontier agents at lower costs for startups — so you're never locked into one provider's pricing or free-tier deprecations.",
+    "category": "personal",
+    "status": "building",
+    "stack": [
+      "Node.js",
+      "TypeScript",
+      "Gemini API",
+      "OpenRouter"
+    ],
+    "featured": true,
+    "year": "2026"
+  },
+  {
+    "id": "document-tracker",
+    "name": "Document Tracker",
+    "tagline": "Audit department document lifecycle system.",
+    "description": "Corporate audit departments lose hundreds of billable hours each quarter chasing file statuses through siloed email attachments and unversioned spreadsheets. Document Tracker gives a department one source of truth for where every document stands, so nothing disappears between an attachment and a file version nobody can find.",
+    "category": "client",
+    "status": "live",
+    "stack": [
+      "React",
+      "Vite",
+      "Supabase",
+      "Vercel"
+    ],
+    "year": "2025"
+  },
+  {
+    "id": "asa",
+    "name": "Àṣà",
+    "tagline": "Curated marketplace for aesthetically conscious young Nigerians.",
+    "description": "Finding authentic, high-craft Nigerian homeware, textiles, and independent artisan products is bogged down in disjointed Instagram DM shopping and payment anxiety. Àṣà creates a vetted two-sided platform anchored in editorial photography and maker provenance.",
+    "category": "concept",
+    "status": "concept",
+    "stack": [
+      "Product Design",
+      "Design Systems",
+      "Figma"
+    ],
+    "year": "2025"
+  },
+  {
+    "id": "sabi",
+    "name": "Sabi",
+    "tagline": "Hyperlocal service discovery for regional Nigerian hubs.",
+    "description": "Outside Lagos, regional commercial centers like Uyo and Yenagoa have zero reliable digital directories for vetted automotive, plumbing, or electrical artisans, forcing residents onto risky word-of-mouth guesses. Sabi mapped neighborhood service reliability before being paused for broader market consolidation.",
+    "category": "concept",
+    "status": "concept",
+    "stack": [
+      "Market Research",
+      "React Native",
+      "PostgreSQL"
+    ],
+    "year": "2024"
+  }
+]
