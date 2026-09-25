@@ -1,0 +1,248 @@
+<!doctype html>
+<!--
+  Design source for the social cards. Not served and not built — `npm run og`
+  injects one card's worth of data (plus the fonts and the signature mark) and
+  screenshots the result at 1200×630. See scripts/og.mjs.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      /* Same three families the site loads from Google Fonts, vendored as .ttf */
+      @font-face {
+        font-family: 'Newsreader';
+        src: url('__FONT_SERIF__') format('truetype');
+        font-weight: 400;
+        font-display: block;
+      }
+      @font-face {
+        font-family: 'Jakarta';
+        src: url('__FONT_SANS__') format('truetype');
+        font-weight: 400;
+        font-display: block;
+      }
+      @font-face {
+        font-family: 'Mono';
+        src: url('__FONT_MONO__') format('truetype');
+        font-weight: 400;
+        font-display: block;
+      }
+
+      /* Tokens copied from app/globals.css. Paper is the base, and the dark set
+         is applied per render by the script (data-theme on <html>) — the same
+         two themes the site itself toggles between. */
+      :root {
+        --background: #faf9f7;
+        --foreground: #1c1917;
+        --muted: #78716c;
+        --rule: rgba(28, 25, 23, 0.14);
+      }
+
+      [data-theme='dark'] {
+        --background: #121110;
+        --foreground: #ede8df;
+        --muted: #9c9488;
+        --rule: rgba(237, 232, 223, 0.14);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        width: 1200px;
+        height: 630px;
+        overflow: hidden;
+        background: var(--background);
+        color: var(--foreground);
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .card {
+        position: relative;
+        width: 1200px;
+        height: 630px;
+        padding: 72px 84px 56px;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Jakarta', system-ui, sans-serif;
+      }
+
+      /* Title and summary sit as one centred block, so short titles don't
+         leave a hole in the middle of the card. The signed corner below is a
+         sibling that claims its own height, so the copy can never drift into
+         it however long a title or summary runs. */
+      .middle {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 8px 0;
+      }
+
+      .masthead {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 24px;
+        padding-bottom: 18px;
+        border-bottom: 1px solid var(--rule);
+        font-family: 'Mono', monospace;
+        font-size: 21px;
+        /* A wrapped route would break the rule into two lines, so the row
+           never wraps — it steps the whole masthead down instead (below). */
+        white-space: nowrap;
+        color: var(--muted);
+      }
+
+      /* Note cards carry the full path, which runs the masthead out of room at
+         21px. Both halves step down together to keep the row one size. */
+      .masthead.long {
+        font-size: 19px;
+      }
+
+      .eyebrow {
+        margin-top: 0;
+        line-height: 1.2;
+        font-family: 'Mono', monospace;
+        font-size: 17px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      .title {
+        margin: 12px 0 0;
+        max-width: 1000px;
+        font-family: 'Newsreader', Georgia, serif;
+        font-size: 72px;
+        font-weight: 400;
+        line-height: 1.08;
+        letter-spacing: -0.01em;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      .title.long {
+        font-size: 60px;
+      }
+
+      .title.longer {
+        font-size: 46px;
+      }
+
+      .description {
+        margin: 18px 0 0;
+        max-width: 900px;
+        font-size: 23px;
+        line-height: 1.42;
+        color: var(--muted);
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      /* Signed in the bottom corner: the written name with the drawn mark
+         beneath it — the two halves of the site's signature, in one pen. Only
+         used here; the header carries the mark on its own.
+
+         Both shapes are injected as markup so CSS can ink them. The stroke
+         widths are not decorative: they were measured so the name and the mark
+         read as the same weight at these two sizes — the smaller mark needs the
+         proportionally heavier stroke to keep up. */
+      .signature {
+        align-self: flex-end;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 4px;
+      }
+
+      .signature svg {
+        display: block;
+        width: auto;
+      }
+
+      .signature svg path {
+        fill: var(--foreground);
+        stroke: var(--foreground);
+      }
+
+      .signature .name svg {
+        height: 60px;
+      }
+
+      .signature .name svg path {
+        stroke-width: 3;
+      }
+
+      .signature .mark svg {
+        height: 50px;
+      }
+
+      .signature .mark svg path {
+        stroke-width: 10;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="masthead">
+        <span>fa·vour /ˈfeɪ.vər/</span>
+        <span id="route"></span>
+      </div>
+
+      <div class="middle">
+        <div class="eyebrow" id="eyebrow"></div>
+
+        <div class="title" id="title"></div>
+
+        <p class="description" id="description"></p>
+      </div>
+
+      <div class="signature" aria-hidden="true">
+        <span class="name">__SIGNATURE__</span>
+        <span class="mark">__MARK__</span>
+      </div>
+    </div>
+
+    <script>
+      window.__CARD__ = __CARD_JSON__;
+    </script>
+    <script>
+      (function () {
+        var card = window.__CARD__ || {};
+
+        document.documentElement.dataset.theme = card.theme || 'light';
+
+        var route = card.route || '';
+        document.getElementById('route').textContent = route;
+        if (route.length > 60) document.querySelector('.masthead').classList.add('long');
+
+        var eyebrow = document.getElementById('eyebrow');
+        if (card.eyebrow) {
+          eyebrow.textContent = card.eyebrow;
+        } else {
+          eyebrow.remove();
+        }
+
+        var title = document.getElementById('title');
+        title.textContent = card.title || '';
+        /* Step the display size down so long titles stay inside three lines */
+        if (title.textContent.length > 76) title.classList.add('longer');
+        else if (title.textContent.length > 46) title.classList.add('long');
+
+        document.getElementById('description').textContent = card.description || '';
+      })();
+    </script>
+  </body>
+</html>

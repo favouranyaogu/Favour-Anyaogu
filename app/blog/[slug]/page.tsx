@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import notesData from '@/data/notes.json';
 import site from '@/data/site.json';
+import { socialCard } from '@/lib/social';
 import { Metadata } from 'next';
 import type { ReactNode } from 'react';
 
@@ -20,6 +21,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${post.title} — Favour Anyaogu`,
     description: post.description,
+    // One committed card per note — regenerate with `npm run og`.
+    ...socialCard(`note-${post.slug}`, {
+      title: post.title,
+      description: post.description,
+    }),
   };
 }
 

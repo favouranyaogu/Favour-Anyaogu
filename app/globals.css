@@ -49,6 +49,18 @@ body {
   transition-delay: 0s !important;
 }
 
+/*
+ * Scrolled header surface. Translucent instead of opaque so the page keeps
+ * drifting under the bar rather than being cut off by it. color-mix derives it
+ * from the one background token, so it can never drift from the palette; the
+ * plain declaration above it is the fallback for engines without color-mix,
+ * which get exactly the old opaque bar.
+ */
+.flo-header-scrolled {
+  background-color: var(--background);
+  background-color: color-mix(in srgb, var(--background) 88%, transparent);
+}
+
 /* Flo Guo signature link style */
 .flo-link {
   color: var(--foreground);

@@ -1,8 +1,17 @@
 import Link from 'next/link';
+import type { Metadata } from 'next';
 import DictionaryPronunciation from '@/components/DictionaryPronunciation';
 import projectsData from '@/data/projects.json';
 import notesData from '@/data/notes.json';
 import site from '@/data/site.json';
+import social from '@/data/social.json';
+import { socialCard } from '@/lib/social';
+
+export const metadata: Metadata = {
+  title: 'Favour Anyaogu',
+  description: social.home.description,
+  ...socialCard('home', social.home),
+};
 
 export default function HomePage() {
   const featuredProjects = projectsData

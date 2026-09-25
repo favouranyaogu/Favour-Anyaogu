@@ -1,10 +1,13 @@
 import Link from 'next/link';
 import notesData from '@/data/notes.json';
+import social from '@/data/social.json';
+import { socialCard } from '@/lib/social';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Notes — Favour Anyaogu',
   description: 'Thoughts, technical investigations, and notes on software craft and AI tools.',
+  ...socialCard('notes', social.notes),
 };
 
 export default function BlogPage() {
@@ -15,7 +18,7 @@ export default function BlogPage() {
           Notes
         </h1>
         <p className="font-sans text-sm text-muted-fg leading-relaxed">
-          Reflections on building living software, AI agent architecture, emerging markets, and product design.
+          Things I'm thinking about.
         </p>
       </header>
 

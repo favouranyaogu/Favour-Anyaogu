@@ -1,10 +1,13 @@
 ﻿import { Metadata } from 'next';
-import hireServices from '@/data/hire.json';
+import hire from '@/data/hire.json';
 import site from '@/data/site.json';
+import social from '@/data/social.json';
+import { socialCard } from '@/lib/social';
 
 export const metadata: Metadata = {
   title: 'Hire — Favour Anyaogu',
   description: 'Design and engineering services for founders, startups, and specialized teams.',
+  ...socialCard('hire', social.hire),
 };
 
 export default function HirePage() {
@@ -18,13 +21,13 @@ export default function HirePage() {
           Services &amp; Contracting
         </h1>
         <p className="font-sans text-sm text-muted-fg leading-relaxed max-w-xl">
-          I partner with founders, venture builders, and independent operators to design and ship software with high conviction. No sales decks, no hidden tiers.
+          {hire.intro}
         </p>
       </header>
 
       {/* Service Tiers */}
       <div className="space-y-10">
-        {hireServices.map((service, index) => {
+        {hire.services.map((service, index) => {
           const prefill = encodeURIComponent(
             `Hi Favour, I'm reaching out regarding your ${service.tier} service tier.`
           );
@@ -82,6 +85,11 @@ export default function HirePage() {
             </article>
           );
         })}
+
+        {/* Instalments — one quiet line covering all three tiers */}
+        <p className="font-sans text-xs text-muted-fg/80 leading-relaxed">
+          {hire.paymentNote}
+        </p>
       </div>
 
       {/* General Inquiry Footer */}
@@ -89,16 +97,22 @@ export default function HirePage() {
         <p className="font-sans">
           Have an unconventional idea or need technical diligence on an existing codebase?
         </p>
-        <div className="flex items-center gap-2 font-mono">
+        {/* Labels, not raw addresses — the numbers overflowed narrow screens. */}
+        <p className="font-mono flex flex-wrap items-center gap-x-2 gap-y-1">
           <span>Reach out directly:</span>
-          <a href={`https://wa.me/${waNumber}`} target="_blank" rel="noopener noreferrer" className="flo-link">
-            {site.availability.whatsapp}
+          <a
+            href={`https://wa.me/${waNumber}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flo-link"
+          >
+            WhatsApp
           </a>
-          <span className="opacity-40">·</span>
+          <span className="opacity-40">or</span>
           <a href={`mailto:${site.availability.email}`} className="flo-link">
-            {site.availability.email}
+            Email
           </a>
-        </div>
+        </p>
       </section>
     </div>
   );

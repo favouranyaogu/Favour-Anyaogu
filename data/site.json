@@ -2,18 +2,23 @@
   "bio": "I build things I actually care about. Full-stack developer, real estate broker, based in Nigeria.",
   "availability": {
     "label": "Currently available for contracts",
-    "email": "favyfavy10@gmail.com",
+    "email": "favournnamdianyaogu@gmail.com",
     "whatsapp": "+2349019788067",
     "whatsappUrl": "https://wa.me/2349019788067?text=Hi%20Favour%2C%20I'm%20reaching%20out%20regarding%20a%20contract."
   },
   "socials": [
-    { "label": "WhatsApp", "href": "https://wa.me/2349019788067" },
-    { "label": "GitHub", "href": "https://github.com/favouranyaogu" },
-    { "label": "Email", "href": "mailto:favyfavy10@gmail.com" }
+    { "label": "GitHub", "href": "https://github.com/favouranyaogu" }
   ],
   "taglines": [
     "Can it be better?",
     "Just be yourself. You don't need to perform for anyone."
   ],
-  "footer": "© Favour Anyaogu 2026. v1.0.0 · floguo.com · antfu.me · paco.me"
+  "colophon": [
+    "Type set in Newsreader and Plus Jakarta Sans",
+    "Built with Next.js, Tailwind CSS, and Supabase",
+    "Hosted on Vercel",
+    "Spotify Web API for now playing",
+    "Inspired by floguo.com, antfu.me, paco.me"
+  ],
+  "footer": "© Favour Anyaogu 2026. v1.0.0"
 }

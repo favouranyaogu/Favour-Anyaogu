@@ -1,10 +1,13 @@
 import { Metadata } from 'next';
 import about from '@/data/about.json';
+import social from '@/data/social.json';
+import { socialCard } from '@/lib/social';
 
 export const metadata: Metadata = {
   title: 'About — Favour Anyaogu',
   description:
     'I build things I actually care about. Full-stack developer, real estate broker, based in Nigeria.',
+  ...socialCard('about', social.about),
 };
 
 export default function AboutPage() {
@@ -23,16 +26,8 @@ export default function AboutPage() {
               <span>↳</span>
               <span className="text-foreground">{entry.question}</span>
             </h2>
-            <div className="pl-4 text-foreground/90 text-sm sm:text-base leading-relaxed space-y-2">
+            <div className="pl-4 text-foreground/90 text-sm sm:text-base leading-relaxed">
               <p>{entry.answer}</p>
-              {entry.detail && <p className="text-sm text-muted-fg">{entry.detail}</p>}
-              {entry.items && (
-                <ul className="text-sm text-muted-fg space-y-1 list-disc pl-4">
-                  {entry.items.map((item) => (
-                    <li key={item}>{item}</li>
-                  ))}
-                </ul>
-              )}
             </div>
           </section>
         ))}

@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
 import booksData from '@/data/books.json';
+import social from '@/data/social.json';
+import { socialCard } from '@/lib/social';
 import Bookshelf from '@/components/Bookshelf';
 import type { BookDetail } from '@/components/BookModal';
 
@@ -7,6 +9,7 @@ export const metadata: Metadata = {
   title: 'Books — Favour Anyaogu',
   description:
     'A curated shelf of what I am reading, what I have kept, and what shaped how I build.',
+  ...socialCard('books', social.books),
 };
 
 export default function BooksPage() {

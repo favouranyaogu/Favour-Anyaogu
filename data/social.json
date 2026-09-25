@@ -1,0 +1,32 @@
+{
+  "home": {
+    "route": "favouranyaogu.vercel.app",
+    "title": "Favour Anyaogu",
+    "description": "Designer with an opinion. One who builds things that shouldn't exist yet — full-stack developer, real estate broker, based in Nigeria."
+  },
+  "projects": {
+    "route": "favouranyaogu.vercel.app/projects",
+    "title": "Projects",
+    "description": "An archive of software, digital platforms, and experiments — live products, active builds, and explored concepts."
+  },
+  "notes": {
+    "route": "favouranyaogu.vercel.app/blog",
+    "title": "Notes",
+    "description": "Things I'm thinking about."
+  },
+  "books": {
+    "route": "favouranyaogu.vercel.app/books",
+    "title": "Bookshelf",
+    "description": "A curated shelf of what I am reading, what I have kept, and what shaped how I build."
+  },
+  "about": {
+    "route": "favouranyaogu.vercel.app/about",
+    "title": "About",
+    "description": "Full-stack developer, real estate broker, chronic idea-starter. Building for everywhere."
+  },
+  "hire": {
+    "route": "favouranyaogu.vercel.app/hire",
+    "title": "Services & Contracting",
+    "description": "Landing pages, full web applications, and ongoing retainers for founders and startups."
+  }
+}

@@ -18,8 +18,14 @@ export const metadata: Metadata = {
     locale: 'en_US',
     type: 'website',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Favour Anyaogu',
+    description:
+      "fa·vour — 1. one who builds things that shouldn't exist yet. 2. designer with an opinion.",
+  },
   icons: {
-    icon: '/signature.svg',
+    icon: '/mark.svg',
   }
 };
 

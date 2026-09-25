@@ -1,9 +1,12 @@
 import ProjectList from '@/components/ProjectList';
 import { Metadata } from 'next';
+import social from '@/data/social.json';
+import { socialCard } from '@/lib/social';
 
 export const metadata: Metadata = {
   title: 'Projects — Favour Anyaogu',
   description: 'Everything I\'ve built, shipped, and conceptualized. Personal ventures, client systems, and experimental prototypes.',
+  ...socialCard('projects', social.projects),
 };
 
 export default function ProjectsPage() {
